@@ -11,13 +11,13 @@ class ProductManager {
                 break;
             }
         }
-        const nueoProducto = {
+        const nuevoProducto = {
             title, description, price, img, code, stock,
 
         };
-        if (!Object.values(nueoProducto).includes(undefined)){
+        if (!Object.values(nuevoProducto).includes(undefined)){
             ProductManager.id++;
-            this.productos.push ({ ... nueoProducto, id:ProductManager.id,});
+            this.productos.push ({ ... nuevoProducto, id:ProductManager.id,});
 
         }else{
             console.log ("se deben ingresar todos los datos")
