@@ -47,7 +47,10 @@ productos.addProductos("producto prueba 2", "Este es un producto de prueba otra 
 
 console.log (productos.getProductos());
 
+//prueba con code repetido
 productos.addProductos("producto prueba 3", "Este es un producto de prueba que tiene que fallar", 4000, "sin imagen 3","mari123", 45);
+//prueba que pasa si faltan datos
+productos.addProductos("producto prueba 3", "esta debe fallar porque faltan datos","sin imagen 3", 45);
 
 //busca el producto por "id" correcto
 productos.getProductById(2)
